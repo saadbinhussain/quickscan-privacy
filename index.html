@@ -1,89 +1,86 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privacy Policy | QuickScan &amp; Craft</title><style>
-*{box-sizing:border-box}body{margin:0;background:#f5f8f4;color:#18231b;font:1rem/1.65 system-ui,sans-serif}main{max-width:49rem;margin:auto;padding:clamp(1.2rem,5vw,3rem)}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,5vw,3rem);margin:0 0 1.2rem}h2{margin-top:2.1rem}a{color:#195b30;text-underline-offset:.15em}a:focus-visible{outline:2px solid currentColor;outline-offset:3px}hr{border:0;border-top:1px solid #cbd8cb;margin:1.6rem 0}code{overflow-wrap:anywhere}li{margin:.4rem 0}
-</style></head><body><main><h1>Privacy Policy for QuickScan &amp; Craft</h1>
-<p><strong>Effective / Last Updated:</strong> November 2026<br />
-<strong>Application:</strong> QuickScan &amp; Craft (<code>com.oronyx.quickscancraft</code>)<br />
-<strong>Developer Contact:</strong> <a href="mailto:saadbinhu@gmail.com">saadbinhu@gmail.com</a></p>
-<hr />
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for the QuickScan &amp; Craft Android app.">
+<title>Privacy Policy | QuickScan &amp; Craft</title>
+<style>
+:root{color-scheme:light dark;--bg:#f5f7f3;--paper:#fff;--ink:#172019;--muted:#47584a;--line:#dbe3d8;--link:#24632f}
+@media(prefers-color-scheme:dark){:root{--bg:#121713;--paper:#1a211b;--ink:#f1f5ef;--muted:#bfcdbf;--line:#3a493b;--link:#b4ebac}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}main{max-width:48rem;margin:clamp(1rem,5vw,4rem) auto;padding:clamp(1.25rem,5vw,3.25rem);background:var(--paper);border:1px solid var(--line);border-radius:1rem}header,section{margin:0 0 1.65rem}h1,h2{line-height:1.2;margin:.25em 0 .5em}h1{font-size:clamp(2rem,6vw,3rem);letter-spacing:-.035em}h2{font-size:1.2rem}p{margin:.6em 0}a{color:var(--link);text-underline-offset:.18em;overflow-wrap:anywhere}.brand{font-weight:700;color:var(--link)}.meta,footer{color:var(--muted)}footer{padding-top:1rem;border-top:1px solid var(--line)}
+h3{line-height:1.2;font-size:1.05rem;margin:1em 0 .5em}li{margin:.4rem 0}code{overflow-wrap:anywhere}a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+</style>
+</head>
+<body><main>
+<header>
+<p class="brand">QuickScan &amp; Craft</p>
+<h1>Privacy Policy</h1>
+<p class="meta"><strong>Last updated:</strong> November 2026<br>
+<strong>Application:</strong> QuickScan &amp; Craft (<code>com.oronyx.quickscancraft</code>)<br>
+<strong>Developer contact:</strong> <a href="mailto:saadbinhu@gmail.com">saadbinhu@gmail.com</a></p>
+</header>
+<section>
 <h2>Overview</h2>
-<p>QuickScan &amp; Craft is a QR code and barcode scanner, generator, and customization app for Android. Your QR scans and created codes are processed directly on your device—we do not operate developer servers, do not require user accounts, and never collect, store on our servers, or sell your scan results or generated payloads.</p>
-<p>The app bundles official Google SDKs that handle on-device barcode recognition (with standard Google SDK diagnostics), consent management, optional Free-tier banner advertisements (when configured), and Google Play Billing over encrypted HTTPS/TLS connections as described below.</p>
-<hr />
+<p>QuickScan &amp; Craft scans, creates, and customizes QR codes and barcodes on Android. The app processes the contents of scans and generated codes on your device. We do not operate a developer server or require an app account, and we do not sell the contents of your codes. This policy describes the ads-free release, including the data handled by Google ML Kit and Google Play Billing.</p>
+</section>
+<section>
 <h2>1. On-Device QR &amp; Barcode Processing and ML Kit Telemetry</h2>
+<p>The app uses bundled Google ML Kit Barcode Scanning (17.3.0) to recognize codes and ZXing (3.5.4) to generate them. The app does not upload your camera frames or the contents of your codes, such as links, Wi-Fi passwords, contact details, event information, or text, for processing.</p>
+<p>As described in <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google’s ML Kit data disclosure</a>, the SDK sends diagnostics and usage analytics to Google over HTTPS. These can include:</p>
 <ul>
-<li><strong>Local Barcode &amp; QR Processing:</strong> Optical barcode detection (via bundled <strong>Google ML Kit Barcode Scanning <code>17.3.0</code></strong>) and QR/barcode matrix rendering (via <strong>ZXing <code>3.5.4</code></strong>) run locally in your device's memory. Scanned links, Wi-Fi passwords, contact vCards, calendar events, and custom text are never uploaded to developer servers, Google ML Kit servers, or advertising networks.</li>
-<li><strong>ML Kit SDK Diagnostics &amp; Usage Data:</strong> Consistent with Google's official ML Kit Android data disclosure, the bundled ML Kit Barcode Scanning SDK automatically transmits technical diagnostics and usage analytics to Google over encrypted HTTPS/TLS to maintain performance, debug errors, and detect abuse (and does not transfer this diagnostic data to third parties). This SDK telemetry includes:<ul>
-<li><strong>Device &amp; Hardware Information:</strong> Device manufacturer, model, Android OS version/build, and available ML hardware accelerators.</li>
-<li><strong>Application Information:</strong> App package name and version.</li>
-<li><strong>Performance &amp; Operational Metrics:</strong> Processing times, API configuration metadata, input/output sizes, feature versions, initialization/recognition events, and error codes.</li>
-<li><strong>Per-Installation Identifier:</strong> ML Kit uses a per-installation identifier for diagnostics and usage analytics. It is not intended to uniquely identify a user or physical device and is separate from Android’s Advertising ID.</li>
+<li>Device and hardware details, such as model, Android version, and available ML accelerators.</li>
+<li>The app’s package name and version.</li>
+<li>Operational information such as processing times, API configuration, input and output sizes, feature versions, recognition events, and error codes.</li>
+<li>An identifier for the app installation, used for diagnostics and usage analytics. This is not Android’s Advertising ID and is not intended to identify a person or physical device uniquely.</li>
 </ul>
-</li>
-<li><strong>Auto-Zoom Disabled:</strong> QuickScan &amp; Craft does <strong>not</strong> enable ML Kit's <code>enableAutoZoom()</code> option (camera zoom is manual only via the on-screen slider), so ML Kit auto-zoom session telemetry (dynamic auto-zoom session IDs, zoom changes, and predicted bounding box coordinates) is not collected.</li>
-</ul>
-<hr />
+<p>Google states that this ML Kit data is not shared with third parties. QuickScan &amp; Craft uses manual camera zoom and does not enable ML Kit’s auto-zoom feature, so the SDK does not collect the additional telemetry associated with that feature.</p>
+</section>
+<section>
 <h2>2. Permissions We Request &amp; Why</h2>
 <ul>
-<li><strong>Camera (<code>CAMERA</code>):</strong> Used solely to operate the live barcode scanner viewfinder. Camera frames are analyzed ephemerally in volatile memory and immediately discarded; no photos or video streams are saved or uploaded.</li>
-<li><strong>Location (<code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code> — Optional):</strong> Requested only when you explicitly tap <strong>&quot;Current Location&quot;</strong> while creating a Location QR code so the app can prefill latitude and longitude. Coordinates remain on your device unless you choose to export or share the resulting QR code. Background location is never accessed.</li>
-<li><strong>Vibration (<code>VIBRATE</code>):</strong> Used solely for optional haptic feedback when a code is scanned, if enabled in Settings.</li>
-<li><strong>Internet &amp; Network State (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> Used by Google Play Billing, Google UMP consent checks, Free-tier banner advertising (when enabled), and Google ML Kit SDK diagnostic reporting.</li>
-<li><strong>Zero Call or SMS Permissions:</strong> Tapping a scanned phone number, SMS, email, or link opens your device's default app chooser (<code>ACTION_DIAL</code>, <code>ACTION_SENDTO</code>, <code>ACTION_VIEW</code>) without granting this app call or SMS permissions.</li>
+<li><strong>Camera:</strong> Runs the live scanner. The app analyzes camera frames in memory and does not save or upload the live camera feed.</li>
+<li><strong>Location (optional):</strong> Used when you tap <strong>Current Location</strong> to fill in coordinates for a Location QR code. The app does not access background location. Coordinates used for the code stay on your device unless you choose to share them, for example by sharing the code.</li>
+<li><strong>Vibration:</strong> Provides scan feedback if enabled in Settings.</li>
+<li><strong>Internet and network state:</strong> Support ML Kit diagnostic reporting and Google Play Billing.</li>
+<li><strong>Calls and messages:</strong> The app does not request permission to make calls or send SMS. When you choose to act on a scanned number, message, email address, or link, Android hands it off to an appropriate app.</li>
 </ul>
-<hr />
-<h2>3. Local Storage, Retention &amp; Android Backup Behavior</h2>
-<ul>
-<li><strong>Scan &amp; Creation History + Custom Style Presets (<code>quickscan_database</code>):</strong> Stored privately inside Android's sandboxed Room (SQLite) database on your device (<code>history_items</code> table for scan/create history and <code>presets</code> table for custom style presets). This database is <strong>excluded</strong> from Android Auto Backup and device-to-device transfer (<code>backup_rules.xml</code> and <code>data_extraction_rules.xml</code>).</li>
-<li><strong>Install &amp; Billing Cache Files:</strong> Onboarding state (<code>quickscan_install_state.xml</code> and <code>noBackupFilesDir/onboarding_completed.flag</code>) and cached Premium purchase preferences (<code>quickscan_billing_prefs.xml</code>) are <strong>excluded</strong> from Android Auto Backup and device-to-device transfer so fresh installs verify entitlement directly with Google Play.</li>
-<li><strong>Settings &amp; Custom Embedded Logos:</strong> Non-sensitive preferences (theme, sound, vibrate, history recording toggle in <code>user_settings.preferences_pb</code> / <code>quickscan_user_settings.xml</code>) and custom logo images you embed into QR codes (<code>files/logos/</code>) are stored locally in app internal storage and may be backed up by Android OS Backup if enabled in your Android device settings.</li>
-<li><strong>Temporary Export Caches:</strong> Ephemeral files generated during Share or Batch Export (<code>PNG</code>, <code>SVG</code>, <code>PDF</code>, <code>ZIP</code>) live in temporary cache directories excluded from backups.</li>
-</ul>
-<h3>Your Retention &amp; Deletion Controls</h3>
-<ul>
-<li>Toggle <strong>Save Scan &amp; Create History</strong> off at any time in <strong>Settings &gt; History &amp; Privacy</strong>.</li>
-<li>Delete individual history entries or custom style presets inside the app.</li>
-<li>Clear all saved scan and creation history items (<code>history_items</code>) via <strong>Settings &gt; History &amp; Privacy &gt; Clear History</strong>. <strong>Clear History removes saved history items only</strong>—it does not delete your saved custom style presets (<code>presets</code>), app settings, temporary export caches, or files you previously saved to device storage or shared with other apps.</li>
-<li><strong>Uninstalling QuickScan &amp; Craft</strong> removes the app's local sandboxed data from your device, <strong>but does not erase</strong> eligible Android OS backups (if enabled on your device for app preferences or custom logos), files you previously saved via Android's Storage Access Framework, or copies already delivered to other apps via Android Sharesheet.</li>
-<li><strong>Local Deletion vs. Off-Device SDK Data:</strong> Clearing local history or uninstalling the app affects your device only and does not delete off-device telemetry or transaction records previously processed by Google ML Kit, Google AdMob, or Google Play.</li>
-</ul>
-<hr />
-<h2>4. Advertising &amp; Consent (Free Tier)</h2>
-<p>QuickScan &amp; Craft includes the <strong>Google Mobile Ads (AdMob) Next-Gen SDK (<code>1.6.0</code>)</strong> and <strong>Google User Messaging Platform (<code>UMP 4.0.0</code>)</strong> to display non-intrusive banner advertisements on main navigation tabs for Free-tier users when production AdMob IDs are configured.</p>
-<ul>
-<li><strong>Data Processed by AdMob (when ads are active):</strong> Consistent with Google's Mobile Ads SDK disclosure, Google AdMob may automatically collect and share with Google and participating ad partners:<ul>
-<li><strong>Approximate Location</strong> (derived from IP address)</li>
-<li><strong>App Interactions</strong> (such as app launches, ad impressions, and ad taps)</li>
-<li><strong>Diagnostics</strong> (performance, crash, and energy-usage telemetry)</li>
-<li><strong>Device or Other Identifiers:</strong> <strong>Android Advertising ID (<code>AD_ID</code>)</strong> (which users can reset or delete in Android System Settings) and <strong>App Set ID</strong> (used for analytics and fraud prevention; not reset or opted out via Android Advertising ID controls).</li>
-</ul>
-</li>
-<li><strong>Consent &amp; Ad Privacy Choices:</strong> Where required by law (EEA, UK, Switzerland, and applicable jurisdictions), UMP presents a consent form before ads load. <strong>Ad Privacy Choices</strong> is available in <strong>Settings</strong> when required by UMP consent rules and applicable to the build's ad configuration. Tapping <strong>History &amp; Privacy &gt; Privacy Choices</strong> opens the UMP privacy options dialog when production ads are configured and consent management applies. You can also reset or delete your Android Advertising ID in Android System Settings.</li>
-<li><strong>Premium Users &amp; Unconfigured Builds:</strong> While Premium is active, the app does not request or display banner ads. When production AdMob IDs are not configured in a build, the advertising and consent SDKs are not initialized.</li>
-<li><strong>Privacy Guarantee on QR Content:</strong> Your scanned barcodes and created QR payloads are never sent to AdMob or any advertiser.</li>
-</ul>
-<hr />
+</section>
+<section>
+<h2>3. Local Storage, Retention &amp; Android Backups</h2>
+<p>Scan and creation history and saved style presets are stored in the app’s private database. This database, onboarding state, and the local Premium purchase cache are excluded from Android backup and device-to-device transfer. Settings such as theme and scan feedback, and locally stored custom logo images, may be backed up by Android if backup is enabled. Temporary export files are stored in cache directories excluded from backups.</p>
+<h3>Your retention and deletion controls</h3>
+<p>In <strong>Settings → History &amp; Privacy</strong>, turn off <strong>Save Scan &amp; Create History</strong> to stop saving new history, or use <strong>Clear History</strong> to remove existing scan and creation history. You can also delete individual history entries and saved presets. Clear History does not remove your presets, settings, temporary export files, or copies already saved or shared outside the app.</p>
+<p>Uninstalling removes the app’s private local data. It does not erase eligible Android backups, files saved outside the app, or copies already shared with other apps. Neither uninstalling nor clearing history deletes telemetry or transaction records already processed by Google.</p>
+</section>
+<section>
+<h2>4. Advertising</h2>
+<p>This release does not request or display ads. It does not include the Google Mobile Ads (AdMob) or Google User Messaging Platform (UMP) SDK, and it does not request the Android Advertising ID permission.</p>
+</section>
+<section>
 <h2>5. Google Play In-App Purchases</h2>
-<p>One-time upgrades to <strong>QuickScan &amp; Craft Premium</strong> are processed entirely by <strong>Google Play Billing (<code>9.1.0</code>)</strong>. We never receive, access, or store your credit card numbers, bank accounts, or billing address. The app queries active <code>INAPP</code> entitlements (<code>queryPurchasesAsync</code>), receives purchase ownership tokens and order identifiers (<code>orderId</code>) over encrypted TLS to unlock Premium and restore past purchases via Google Play, and caches ownership state and the last <code>orderId</code> locally in <code>quickscan_billing_prefs.xml</code> (excluded from backup) for offline continuity.</p>
-<hr />
-<h2>6. Exporting, FileProvider &amp; External Apps</h2>
-<p>When you share an export, Android gives the receiving app temporary read access to the selected file. When you save an export, QuickScan &amp; Craft writes a copy to the location you choose in Android’s file picker. Copies saved or shared outside the app are not removed when you clear History or uninstall the app.</p>
-<hr />
+<p>Google Play Billing (9.1.0) processes the one-time Premium upgrade. QuickScan &amp; Craft does not receive your card number, bank account information, or billing address. The app checks purchase ownership with Google Play to unlock or restore Premium. It receives purchase tokens and order identifiers through Play Billing and caches Premium ownership status and the last order ID in private local storage to support offline access. That cache is excluded from Android backup.</p>
+</section>
+<section>
+<h2>6. Exports &amp; External Apps</h2>
+<p>When you share an export, Android grants the receiving app temporary read access to the selected file. When you save an export, the app writes a copy to the location you choose in Android’s file picker. Clearing history or uninstalling does not remove copies saved or shared outside the app.</p>
+</section>
+<section>
 <h2>7. Data Security</h2>
-<ul>
-<li>All communications with Google ML Kit diagnostics, Google Play Billing, Google UMP, and Google AdMob are encrypted in transit using HTTPS/TLS.</li>
-<li>Local data is isolated within Android's per-app storage sandbox.</li>
-</ul>
-<hr />
-<h2>8. Children's Privacy</h2>
-<p>QuickScan &amp; Craft is a general-purpose utility app not directed to children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children.</p>
-<hr />
+<p>ML Kit diagnostic traffic and Google Play Billing communications are encrypted in transit using HTTPS/TLS. Android’s per-app storage sandbox isolates the app’s private local files.</p>
+</section>
+<section>
+<h2>8. Children’s Privacy</h2>
+<p>QuickScan &amp; Craft is a general-purpose utility and is not directed to children under 13 or the applicable minimum age in your jurisdiction. We do not knowingly collect personal information from children.</p>
+</section>
+<section>
 <h2>9. Changes to This Privacy Policy</h2>
-<p>We may update this Privacy Policy from time to time to reflect app updates, SDK changes, or legal requirements. Updates will be reflected by the &quot;Last Updated&quot; date at the top of this policy and within the in-app Privacy Policy screen.</p>
-<hr />
-<h2>10. Contact Us</h2>
-<p>If you have questions or requests regarding this Privacy Policy or your privacy controls, please contact the developer at:</p>
-<ul>
-<li><strong>Email:</strong> <a href="mailto:saadbinhu@gmail.com">saadbinhu@gmail.com</a></li>
-</ul>
-</main></body></html>
+<p>We may revise this policy when the app, its SDKs, or legal requirements change. The date at the top indicates when this policy was last updated.</p>
+</section>
+<footer>
+<h2>10. Contact</h2>
+<p>For questions about this policy or the app’s privacy controls, email <a href="mailto:saadbinhu@gmail.com">saadbinhu@gmail.com</a>.</p>
+<p><a href="./terms.html">Terms of Service</a></p>
+</footer>
+</main></body>
+</html>
